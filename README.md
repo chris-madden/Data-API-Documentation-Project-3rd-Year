@@ -2,7 +2,7 @@
 
 ##This is smaller text
 
-```java
+```c
 int myFunction()
 {
   int a = b * c;
