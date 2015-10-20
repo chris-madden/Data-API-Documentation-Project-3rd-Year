@@ -5,6 +5,6 @@
 ```java
 int myFunction()
 {
-
+  int a = b * c;
 }
 ```
