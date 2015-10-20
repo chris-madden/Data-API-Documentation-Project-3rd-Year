@@ -2,7 +2,7 @@
 
 ##This is smaller text
 
-```
+```java
 int myFunction()
 {
 
