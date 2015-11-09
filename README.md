@@ -26,8 +26,10 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 
 *Recommended fields to use*
 
-| OBJECTID|NAME|TYPE|NO_SPACES|LAT|LONG|EastITM|NorthITM|EastIG|NorthIG|   
+|OBJECTID|NAME|TYPE|NO_SPACES|LAT|LONG|EastITM|NorthITM|EastIG|NorthIG|   
 |---|---|---|---|---|---|---|---|---|---|
+
+
 
 
 
