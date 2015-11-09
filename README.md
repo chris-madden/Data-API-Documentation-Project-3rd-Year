@@ -29,6 +29,21 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 |OBJECTID|NAME|TYPE|NO_SPACES|LAT|LONG|EastITM|NorthITM|EastIG|NorthIG|   
 |---|---|---|---|---|---|---|---|---|---|
 
+**Note on what type of information will be retrieved with each field**
+
+1. X: -9.053499750875776
+2. Y: 53.273082469830108
+3. OBJECTID: 1
+4. NAME: Market St
+5. TYPE: Pay/Surface Carpark, Multistorey Carpark, Surface Carpark (free parking)
+6. NO_SPACES: 88
+7. LAT: 53.273
+8. LONG: -9.054
+9. EastITM: 529691.955
+10. NorthITM: 725294.803
+11. EastIG: 129726.012
+12. NorthIG: 225265.639
+
 
 
 
