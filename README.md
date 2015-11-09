@@ -44,6 +44,14 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 11. EastIG: 129726.012
 12. NorthIG: 225265.639
 
+*For those who need more inforamtion about the different coordinate systems check out the links below*
+
+[Lat & Long](https://www.learner.org/jnorth/tm/LongitudeIntro.html)
+
+[ITM](https://en.wikipedia.org/wiki/Irish_Transverse_Mercator)
+
+[IG](https://en.wikipedia.org/wiki/Irish_grid_reference_system)
+
 
 
 
