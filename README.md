@@ -52,11 +52,11 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 
 [IG](https://en.wikipedia.org/wiki/Irish_grid_reference_system)
 
-####Retrieving Data
+####/Retrieve
 
 ######URL Structure 
 
-    /carpark_api/?field=[field]&limit[limit]
+    carpark_api/retrieve?field=[field]&limit[limit]
 
 ######Method** 
 
