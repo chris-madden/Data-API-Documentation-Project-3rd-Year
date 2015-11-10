@@ -54,13 +54,19 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 
 ####Retrieve Data
 
-**URL Structure** -  www.galwaycity.ie/carpark_api/?field=[Name of field]&limit[Number of rows]
+**URL Structure** 
 
-**Method** - GET 
+www.galwaycity.ie/carpark_api/?field=[Name of field]&limit[Number of rows]
 
-**Arguments** - >Field: The name of the fields you want. (Use ‘all’ to retrieve all fields for the row) E.G field=all
+**Method** 
 
-                >Limit: The number of rows you want returned (defaults to 20) E.G limit=5
+GET 
+
+**Arguments** -
+
+|Field| The name of the fields you want. (Use ‘all’ to retrieve all fields for the row) E.G field=all|
+|Limit| The number of rows you want returned (defaults to 20) E.G limit=5|
+|-----|------------------------------------------------------------------|
 
 
 
