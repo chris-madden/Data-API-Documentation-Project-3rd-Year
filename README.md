@@ -56,17 +56,18 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 
 **URL Structure** 
 
-www.galwaycity.ie/carpark_api/?field=[Name of field]&limit[Number of rows]
+*www.galwaycity.ie/carpark_api/?field=[ Name of field ]&limit[ Number of rows ]*
 
 **Method** 
 
 GET 
 
-**Arguments** -
+Arguments 
 
-|Field| The name of the fields you want. (Use ‘all’ to retrieve all fields for the row) E.G field=all|
-|Limit| The number of rows you want returned (defaults to 20) E.G limit=5|
-|-----|------------------------------------------------------------------|
+|Argument|Description|
+|---|---|
+| field |  *The name of the fields you want. (Use ‘all’ to retrieve all fields for the row)* **E.G field=all**|
+|limit| *The number of rows you want returned (defaults to 20)* **E.G limit=5**|
 
 
 
