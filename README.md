@@ -56,7 +56,7 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 
 ######URL Structure 
 
-/carpark_api/?field=[field]&limit[limit]
+    /carpark_api/?field=[field]&limit[limit]
 
 ######Method** 
 
@@ -68,6 +68,14 @@ GET
 |---|---|
 | field |  *The name of the fields you want. (Use ‘all’ to retrieve all fields for the row)* **E.G field=all**|
 |limit| *The number of rows you want returned (defaults to 20)* **E.G limit=5**|
+
+######Returns
+
+Car Park information in JSON format
+
+```javascript
+[{type: Multistorey Carpark, no_spaces: 88}, {type: Pay/Surface Carpark, no_spaces: 100}]
+```
 
 
 
