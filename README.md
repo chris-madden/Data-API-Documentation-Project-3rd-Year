@@ -52,17 +52,17 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 
 [IG](https://en.wikipedia.org/wiki/Irish_grid_reference_system)
 
-####Retrieve Data
+####Retrieving Data
 
-**URL Structure** 
+######URL Structure 
 
-*www.galwaycity.ie/carpark_api/?field=[ Name of field ]&limit[ Number of rows ]*
+/carpark_api/?field=[field]&limit[limit]
 
-**Method** 
+######Method** 
 
 GET 
 
-Arguments 
+######Arguments 
 
 |Argument|Description|
 |---|---|
