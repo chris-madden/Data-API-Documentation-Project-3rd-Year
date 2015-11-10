@@ -47,10 +47,23 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 *For those who need more inforamtion about the different coordinate systems check out the links below*
 
 [Lat & Long](https://www.learner.org/jnorth/tm/LongitudeIntro.html)
-
 [ITM](https://en.wikipedia.org/wiki/Irish_Transverse_Mercator)
-
 [IG](https://en.wikipedia.org/wiki/Irish_grid_reference_system)
+
+####Retrieve Data
+
+**URL Structure** -  www.galwaycity.ie/carpark_api/?field=[Name of field]&limit[Number of rows]
+
+**Method** - GET 
+
+**Arguments** - Field: The name of the fields you want. (Use ‘all’ to retrieve all fields for the row)
+                       E.G field=all
+                       
+                Limit: The number of rows you want returned (defaults to 20)
+                       E.G limit=5
+
+
+
 
 
 
