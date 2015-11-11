@@ -1,14 +1,20 @@
-###Project Title
+##Project Title
 
 ######Data Representation and Querying Project 2015
 
-###Name
+##Name
 
 ######Christy Madden
 
 ###Introduction
 
 This project is using the dataset 'Galway City Parking Locations' which can be found at the following url https://data.gov.ie/dataset/galway-city-car-parking-locations. The design and documentation for the dataset is below.
+
+###About the api
+
+This is an api designed for developers who may need data based on car parking locations in Galway. It is accessed through http. The basic url structure is below:
+
+     www.galway.ie/carpark_api/?
 
 ###About the dataset
 
@@ -19,13 +25,6 @@ The dataset has 17 rows and covers all public car parks in the city. This datase
 The dataset contains 12 fields which includes different grid systems for locating the car parks.
 
 Rows are determined by the objectid
-
-###About the api
-
-This is an api designed for developers who may need data based on car parking locations in Galway. It is accessed through http. The basic url structure is below:
-
-     www.galway.ie/carpark_api/?
-
 
 ######Contents in dataset
 
