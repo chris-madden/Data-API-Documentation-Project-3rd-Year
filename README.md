@@ -136,7 +136,7 @@ Returns a JSON object with a success value stating whether your update worked or
 
 ######URL Structure
 
-     carpark_api/update?objectid=[id number]&field=[field]&values=[value]
+     carpark_api/delete?objectid=[id number]
      
 ######Method
 
@@ -146,7 +146,7 @@ DELETE
 
 |Argument|Description|
 |---|---|
-| objectid  |  *The number of the row you want to delete*|
+| id number  |  *The number of the row you want to delete*|
 
 *Only full rows can be deleted, when you choose the row using the objectid all in information connected to this row will be deleted*
 
