@@ -58,7 +58,7 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 
     carpark_api/retrieve?field=[field]&limit[limit]
 
-######Method** 
+######Method
 
 GET 
 
@@ -74,9 +74,35 @@ GET
 Car Park information in JSON format
 
 ```javascript
-[{type: Multistorey Carpark, no_spaces: 88}, {type: Pay/Surface Carpark, no_spaces: 100}]
+[{type: "Multistorey Carpark", no_spaces: 88}, {type: "Pay/Surface Carpark", no_spaces: 100}]
 ```
 
+####/Add
+
+######URL Structure 
+
+    carpark_api/add?field=[field]&values[value]
+    
+######Method
+
+POST
+
+######Arguments
+
+|Argument|Description|
+|---|---|
+| field |  *The name of the fields you want.*|
+|value| *The value of the field*|
+
+*The order of values is important, they must match the order of the fields or else the wrong information will be stored in the field*
+
+######Returns
+
+Returns a JSON object with a success value stating whether your post worked or not and shows the values paired with the fields you wanted
+
+```javascript
+{success: true, objectid : 18, name: "galway carpark", type: "multistorey carpark"}
+```
 
 
 
