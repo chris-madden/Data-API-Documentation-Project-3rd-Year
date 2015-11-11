@@ -91,20 +91,20 @@ POST
 
 |Argument|Description|
 |---|---|
-| X |  *The name of the fields you want.*|
-|Y| *The value of the field*|
-| Objectid |  *The name of the fields you want.*|
-|Name| *The value of the field*|
-| Type |  *The name of the fields you want.*|
-|No_Spaces| *The value of the field*|
-| Lat |  *The name of the fields you want.*|
-|Long| *The value of the field*|
-| Eastitm |  *The name of the fields you want.*|
-|Northitm| *The value of the field*|
-| Eastig |  *The name of the fields you want.*|
-|Northig| *The value of the field*|
+| X |  *The long version of the latitute coordinates*|
+|Y| *long version of the longtitute coordinates*|
+| Objectid |  *The id number of the row.*|
+|Name| *The name of the carpark*|
+| Type |  *The type of carpark*|
+|No_Spaces| *The number of spces in the carpark*|
+| Lat |  *The latitude of the carpark*|
+|Long| *The longtitutde of the carpar*|
+| Eastitm |  *The east ITM coordinates*|
+|Northitm| *The north ITM coordinates*|
+| Eastig |  *The east IG coordinates*|
+|Northig| *The north IG coordinates*|
 
-*The order of values is important, they must match the order of the fields or else the wrong information will be stored in the field*
+*These fields must be sent in the body of the request*
 
 Sample Request
 
