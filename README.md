@@ -22,18 +22,18 @@ The dataset contains 12 fields which includes different grid systems for locatin
 
 |Field|Value|
 |---|---|
-| X |  *The long version of the latitute coordinates*|
-|Y| *long version of the longtitute coordinates*|
-| Objectid |  *The id number of the row.*|
-|Name| *The name of the carpark*|
-| Type |  *The type of carpark*|
-|No_Spaces| *The number of spces in the carpark*|
-| Lat |  *The latitude of the carpark*|
-|Long| *The longtitutde of the carpar*|
-| Eastitm |  *The east ITM coordinates*|
-|Northitm| *The north ITM coordinates*|
-| Eastig |  *The east IG coordinates*|
-|Northig| *The north IG coordinates*|
+| X | The long version of the latitute coordinates|
+|Y| The long version of the longtitute coordinates|
+| Objectid |The id number of the row|
+|Name|The name of the carpark|
+| Type |The type of carpark|
+|No_Spaces|The number of spaces in the carpark|
+| Lat |The latitude of the carpark|
+|Long|The longtitutde of the carpark|
+| Eastitm |The east ITM coordinates|
+|Northitm|The north ITM coordinates|
+| Eastig |The east IG coordinates|
+|Northig|The north IG coordinates|
 
 *For those who need more inforamtion about the different coordinate systems check out the links below*
 
@@ -57,17 +57,17 @@ GET
 
 |Argument|Description|
 |---|---|
-| field |  *The name of the fields you want. (Use ‘all’ to retrieve all fields for the row)* **E.G field=all**|
-|limit| *The number of rows you want returned (defaults to 20)* **E.G limit=5**|
+| field | The name of the fields you want. (Use ‘all’ to retrieve all fields for the row) **E.G field=all**|
+|limit| The number of rows you want returned (defaults to 20) **E.G limit=5**|
 
 ######Returns
 
-Car Park information in JSON format
+An array of JSON objects
 
 ######Sample Response
 
 ```javascript
-[{type: "Multistorey Carpark", no_spaces: 88}, {type: "Pay/Surface Carpark", no_spaces: 100}]
+[ {"type": "Multistorey Carpark", "no_spaces": 88}, {"type": "Pay/Surface Carpark", "no_spaces": 100}]
 ```
 
 ---
@@ -105,14 +105,11 @@ POST
 
 Returns a JSON object with a success value stating whether your post worked or not and shows the values paired with the fields you wanted
 
-```javascript
-{success: true, objectid : 18, name: "galway carpark", type: "multistorey carpark"}
-```
-
 ######Sample Response
 
 ```javascript
-{    "X": "1.87654", 
+{    "success": true,
+     "X": "1.87654", 
      "Y": "2.45986", 
      "objectid" : 20, 
      "name": "shop street carpark", 
@@ -179,7 +176,7 @@ DELETE
 
 |Argument|Description|
 |---|---|
-| id number  | The number of the row you want to delete|
+|objectid| The number of the row you want to delete|
 
 *Only full rows can be deleted, when you choose the row using the objectid all in information connected to this row will be deleted*
 
