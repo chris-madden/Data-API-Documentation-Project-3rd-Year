@@ -104,9 +104,33 @@ Returns a JSON object with a success value stating whether your post worked or n
 {success: true, objectid : 18, name: "galway carpark", type: "multistorey carpark"}
 ```
 
+####/Update
 
+######URL Structure 
 
+    carpark_api/update?objectid=[id number]&field=[field]&values=[value]
+    
+######Method
 
+POST
+
+######Arguments
+
+|Argument|Description|
+|---|---|
+| objectid  |  *The number of the row you want to change*|
+|field | *The name of the fields you want to change*|
+|value  | *The values for the new field*|
+
+*Multiple fields for the row can be changed in one go. Add a comma between fields and make sure you have the correct values for them also separated by a comma*
+
+######Returns
+
+Returns a JSON object with a success value stating whether your update worked or not and shows the new values paired with the fields you wanted.
+
+```javascript
+{success: true, objectid : 7, name: “city center carpark”, type: “Surface Carpark (free parking)”}
+```
 
 
 
