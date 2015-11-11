@@ -52,6 +52,8 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 
 [IG](https://en.wikipedia.org/wiki/Irish_grid_reference_system)
 
+---
+
 ####/Retrieve
 
 ######URL Structure 
@@ -73,15 +75,19 @@ GET
 
 Car Park information in JSON format
 
+######Sample Response
+
 ```javascript
 [{type: "Multistorey Carpark", no_spaces: 88}, {type: "Pay/Surface Carpark", no_spaces: 100}]
 ```
+
+---
 
 ####/Add
 
 ######URL Structure 
 
-    carpark_api/add?field=[field]&values[value]
+    carpark_api/add?
     
 ######Method
 
@@ -106,7 +112,15 @@ POST
 
 *These fields must be sent in the body of the request*
 
-Sample Request
+######Returns
+
+Returns a JSON object with a success value stating whether your post worked or not and shows the values paired with the fields you wanted
+
+```javascript
+{success: true, objectid : 18, name: "galway carpark", type: "multistorey carpark"}
+```
+
+######Sample Response
 
 ```javascript
 {X; 1.87654, 
@@ -124,13 +138,7 @@ Sample Request
  }
 ```
 
-######Returns
-
-Returns a JSON object with a success value stating whether your post worked or not and shows the values paired with the fields you wanted
-
-```javascript
-{success: true, objectid : 18, name: "galway carpark", type: "multistorey carpark"}
-```
+---
 
 ####/Update
 
@@ -156,9 +164,13 @@ PUT
 
 Returns a JSON object with a success value stating whether your update worked or not and shows the new values paired with the fields you wanted.
 
+######Sample Response
+
 ```javascript
 {success: true, objectid : 7, name: “city center carpark”, type: “Surface Carpark (free parking)”}
 ```
+
+---
 
 ####/Delete
 
@@ -182,9 +194,13 @@ DELETE
 
 A JSON object with a delete value saying whether or not it worked and the number of the row that was deleted
 
+######Sample Response
+
 ```javascript
 {Deleted: true, objectid : 9}
 ```
+
+
 
 
 
