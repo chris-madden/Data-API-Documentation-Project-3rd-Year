@@ -12,11 +12,20 @@ This project is using the dataset 'Galway City Parking Locations' which can be f
 
 ###About the dataset
 
-The dataset is originally in the CSV (comma separated values) format and is formatted into json. The dataset can be found and downloaded from https://data.gov.ie/dataset/galway-city-car-parking-locations/resource/d967950d-faab-45ad-815d-211c9bcfb38e.
+The dataset is originally in the CSV (comma separated values) format and is formatted into json when requested. The dataset can be found in this repository.
 
 The dataset has 17 rows and covers all public car parks in the city. This dataset will continue to grow as it is expanded to to cover the surrounding areas of Galway City. 
 
 The dataset contains 12 fields which includes different grid systems for locating the car parks.
+
+Rows are determined by the objectid
+
+###About the api
+
+This is an api designed for developers who may need data based on car parking locations in Galway. It is accessed through http. The basic url structure is below:
+
+     www.galway.ie/carpark_api/?
+
 
 ######Contents in dataset
 
@@ -62,7 +71,7 @@ GET
 
 ######Returns
 
-An array of JSON objects
+An array of JSON objects with carpark information
 
 ######Sample Response
 
