@@ -17,7 +17,6 @@ The dataset is originally in the CSV (comma separated values) format and is form
 The dataset has 17 rows and covers all public car parks in the city. This dataset will continue to grow as it is expanded to to cover the surrounding areas of Galway City. 
 
 The dataset contains 12 fields which includes different grid systems for locating the car parks.
-The first 2 fields are an older coordinates system and may not be of use to you, we recommend you ignore these and choose one of the more up to date coordinate systems
 
 ######Contents in dataset
 
@@ -38,11 +37,9 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 
 *For those who need more inforamtion about the different coordinate systems check out the links below*
 
-*[Lat & Long](https://www.learner.org/jnorth/tm/LongitudeIntro.html)
-
-*[ITM](https://en.wikipedia.org/wiki/Irish_Transverse_Mercator)
-
-*[IG](https://en.wikipedia.org/wiki/Irish_grid_reference_system)
+* [Lat & Long](https://www.learner.org/jnorth/tm/LongitudeIntro.html)
+* [ITM](https://en.wikipedia.org/wiki/Irish_Transverse_Mercator)
+* [IG](https://en.wikipedia.org/wiki/Irish_grid_reference_system)
 
 ---
 
@@ -50,7 +47,7 @@ The first 2 fields are an older coordinates system and may not be of use to you,
 
 ######URL Structure 
 
-    carpark_api/retrieve?field=[field]&limit[limit]
+    www.galway.ie/carpark_api/retrieve?field=[field]&limit[limit]
 
 ######Method
 
@@ -79,7 +76,7 @@ Car Park information in JSON format
 
 ######URL Structure 
 
-    carpark_api/add?
+     www.galway.ie/carpark_api/add?
     
 ######Method
 
@@ -89,18 +86,18 @@ POST
 
 |Argument|Description|
 |---|---|
-| X |  *The long version of the latitute coordinates*|
-|Y| *long version of the longtitute coordinates*|
-| Objectid |  *The id number of the row.*|
-|Name| *The name of the carpark*|
-| Type |  *The type of carpark*|
-|No_Spaces| *The number of spces in the carpark*|
-| Lat |  *The latitude of the carpark*|
-|Long| *The longtitutde of the carpar*|
-| Eastitm |  *The east ITM coordinates*|
-|Northitm| *The north ITM coordinates*|
-| Eastig |  *The east IG coordinates*|
-|Northig| *The north IG coordinates*|
+| X |  The long version of the latitute coordinates|
+|Y| The long version of the longtitute coordinates|
+| Objectid | The id number of the row|
+|Name| The name of the carpark|
+| Type | The type of carpark|
+|No_Spaces| The number of spces in the carpark|
+| Lat | The latitude of the carpark|
+|Long|The longtitutde of the carpar|
+| Eastitm |The east ITM coordinates|
+|Northitm|The north ITM coordinates|
+| Eastig |The east IG coordinates|
+|Northig|The north IG coordinates|
 
 *These fields must be sent in the body of the request*
 
@@ -115,18 +112,18 @@ Returns a JSON object with a success value stating whether your post worked or n
 ######Sample Response
 
 ```javascript
-{X; 1.87654, 
- Y: 2.45986, 
- objectid : 20, 
- name: "shop street carpark", 
- type: "multistorey carpark",
- No_spaces: 100,
- Lat: 1.877,
- Long: 2.60,
- Eastitm: 1498.987
- Northitm: 2193.564
- Eastig: 298764.18,
- Northig: 3981.87
+{    "X": "1.87654", 
+     "Y": "2.45986", 
+     "objectid" : 20, 
+     "name": "shop street carpark", 
+     "type": "multistorey carpark",
+     "No_spaces": 100,
+     "Lat": 1.877,
+     "Long": 2.60,
+     "Eastitm": 1498.987
+     "Northitm": 2193.564
+     "Eastig": 298764.18,
+     "Northig": 3981.87
  }
 ```
 
@@ -136,7 +133,7 @@ Returns a JSON object with a success value stating whether your post worked or n
 
 ######URL Structure 
 
-    carpark_api/update?objectid=[id number]&field=[field]&values=[value]
+     www.galway.ie/carpark_api/update?objectid=[id number]&field=[field]&values=[value]
     
 ######Method
 
@@ -146,9 +143,9 @@ PUT
 
 |Argument|Description|
 |---|---|
-| objectid  |  *The number of the row you want to change*|
-|field | *The name of the fields you want to change*|
-|value  | *The values for the new field*|
+| objectid  | The number of the row you want to change|
+|field | The name of the fields you want to change|
+|value  |The values for the new field|
 
 *Multiple fields for the row can be changed in one go. Add a comma between fields and make sure you have the correct values for them also separated by a comma*
 
@@ -159,7 +156,11 @@ Returns a JSON object with a success value stating whether your update worked or
 ######Sample Response
 
 ```javascript
-{success: true, objectid : 7, name: “city center carpark”, type: “Surface Carpark (free parking)”}
+{    "success": true, 
+     "objectid" : 7, 
+     "name": “city center carpark”, 
+     "type": “Surface Carpark (free parking)”
+ }
 ```
 
 ---
@@ -168,7 +169,7 @@ Returns a JSON object with a success value stating whether your update worked or
 
 ######URL Structure
 
-     carpark_api/delete?objectid=[id number]
+      www.galway.ie/carpark_api/delete?objectid=[id number]
      
 ######Method
 
@@ -178,7 +179,7 @@ DELETE
 
 |Argument|Description|
 |---|---|
-| id number  |  *The number of the row you want to delete*|
+| id number  | The number of the row you want to delete|
 
 *Only full rows can be deleted, when you choose the row using the objectid all in information connected to this row will be deleted*
 
@@ -189,7 +190,8 @@ A JSON object with a delete value saying whether or not it worked and the number
 ######Sample Response
 
 ```javascript
-{Deleted: true, objectid : 9}
+{   "Deleted": true, 
+    "objectid" : 9}
 ```
 
 
