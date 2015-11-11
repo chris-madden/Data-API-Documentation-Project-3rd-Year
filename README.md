@@ -112,7 +112,7 @@ Returns a JSON object with a success value stating whether your post worked or n
     
 ######Method
 
-POST
+PUT
 
 ######Arguments
 
@@ -132,6 +132,31 @@ Returns a JSON object with a success value stating whether your update worked or
 {success: true, objectid : 7, name: “city center carpark”, type: “Surface Carpark (free parking)”}
 ```
 
+####/Delete
+
+######URL Structure
+
+     carpark_api/update?objectid=[id number]&field=[field]&values=[value]
+     
+######Method
+
+DELETE 
+
+######Arguments
+
+|Argument|Description|
+|---|---|
+| objectid  |  *The number of the row you want to delete*|
+
+*Only full rows can be deleted, when you choose the row using the objectid all in information connected to this row will be deleted*
+
+######Returns
+
+A JSON object with a delete value saying whether or not it worked and the number of the row that was deleted
+
+```javascript
+{Deleted: true, objectid : 9}
+```
 
 
 
