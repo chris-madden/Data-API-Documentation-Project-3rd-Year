@@ -91,10 +91,38 @@ POST
 
 |Argument|Description|
 |---|---|
-| field |  *The name of the fields you want.*|
-|value| *The value of the field*|
+| X |  *The name of the fields you want.*|
+|Y| *The value of the field*|
+| Objectid |  *The name of the fields you want.*|
+|Name| *The value of the field*|
+| Type |  *The name of the fields you want.*|
+|No_Spaces| *The value of the field*|
+| Lat |  *The name of the fields you want.*|
+|Long| *The value of the field*|
+| Eastitm |  *The name of the fields you want.*|
+|Northitm| *The value of the field*|
+| Eastig |  *The name of the fields you want.*|
+|Northig| *The value of the field*|
 
 *The order of values is important, they must match the order of the fields or else the wrong information will be stored in the field*
+
+Sample Request
+
+```javascript
+{X; 1.87654, 
+ Y: 2.45986, 
+ objectid : 20, 
+ name: "shop street carpark", 
+ type: "multistorey carpark",
+ No_spaces: 100,
+ Lat: 1.877,
+ Long: 2.60,
+ Eastitm: 1498.987
+ Northitm: 2193.564
+ Eastig: 298764.18,
+ Northig: 3981.87
+ }
+```
 
 ######Returns
 
