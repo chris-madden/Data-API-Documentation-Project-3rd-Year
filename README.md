@@ -99,7 +99,7 @@ POST
 | Objectid | The id number of the row|
 |Name| The name of the carpark|
 | Type | The type of carpark|
-|No_Spaces| The number of spces in the carpark|
+|No_Spaces| The number of spaces in the carpark|
 | Lat |The short version of the latitude coordinates|
 |Long|The short version of the longitude coordinates|
 | Eastitm |The east ITM coordinates|
@@ -186,7 +186,7 @@ DELETE
 |---|---|
 |objectid| The number of the row you want to delete|
 
-*Only full rows can be deleted, when you choose the row using the objectid all in information connected to this row will be deleted*
+*Only full rows can be deleted, when you choose the row using the objectid all information connected to this row will be deleted*
 
 ######Returns
 
