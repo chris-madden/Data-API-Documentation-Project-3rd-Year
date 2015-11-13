@@ -30,14 +30,14 @@ Rows are determined by the objectid
 
 |Field|Value|
 |---|---|
-| X | The long version of the latitute coordinates|
-|Y| The long version of the longtitute coordinates|
+| X | The long version of the latitude coordinates|
+|Y| The long version of the longitude coordinates|
 | Objectid |The id number of the row|
 |Name|The name of the carpark|
 | Type |The type of carpark|
 |No_Spaces|The number of spaces in the carpark|
-| Lat |The latitude of the carpark|
-|Long|The longtitutde of the carpark|
+| Lat |The short version of the latitude coordinates|
+|Long|The short version of the longitude coordinates|
 | Eastitm |The east ITM coordinates|
 |Northitm|The north ITM coordinates|
 | Eastig |The east IG coordinates|
