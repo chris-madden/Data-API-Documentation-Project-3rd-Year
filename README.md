@@ -8,7 +8,7 @@
 
 ###Introduction
 
-This project is using the dataset 'Galway City Parking Locations' which can be found at the following url https://data.gov.ie/dataset/galway-city-car-parking-locations. The design and documentation for the dataset is below.
+This project is using the dataset 'Galway City Parking Locations' which can be found at the following url https://data.gov.ie/dataset/galway-city-car-parking-locations. You can also download the dataset from this repository if you wish. The design and documentation for the dataset is below.
 
 ###About the api
 
